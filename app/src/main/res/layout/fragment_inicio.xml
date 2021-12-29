@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/white"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        tools:ignore="MissingClass">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center|top"
+            >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="364dp"
+                android:layout_height="122dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/radio" />
+
+            <ImageView
+                android:id="@+id/chicaMusic"
+                android:layout_width="122dp"
+                android:layout_height="143dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView3"
+                app:srcCompat="@drawable/chicha_escuchando" />
+
+            <ImageView
+                android:id="@+id/imageReproductor"
+                android:layout_width="47dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/chicaMusic"
+                app:srcCompat="@drawable/play" />
+
+            <ImageView
+                android:id="@+id/imagenReproductor"
+                android:layout_width="123dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="44dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                app:srcCompat="@drawable/playreproductor" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="192dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintStart_toEndOf="@+id/chicaMusic"
+                app:layout_constraintTop_toBottomOf="@+id/imagenReproductor"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/barramusical" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/AgSemanal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/mont_heavy"
+            android:text="Agenda de la semana"
+            android:textAlignment="center"
+            android:textColor="#003d7f"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:id="@+id/tabla_agenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center|top"
+            android:background="@color/white"
+            android:nestedScrollingEnabled="false">
+
+        </TableLayout>
+
+
+    </LinearLayout>
+</ScrollView>

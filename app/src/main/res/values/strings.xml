@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">La U en Linea</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">La U en linea</string>
+    <string name="nav_header_subtitle">Facso transmite</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="Menu">Menu</string>
+    <string name="channel_name">La U en linea</string>
+    <string name="channel_description">Canal de la u en linea</string>
+    <string name="titulo">Logo u en linea</string>
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_programas">Nuestros Programas</string>
+    <string name="menu_notificaciones">Notificaciones</string>
+    <string name="noti_preference_key">notificacion_preference</string>
+    <string name="noti_CartasSM">noti_CartasSM</string>
+    <string name="noti_EnLineaConLa">noti_EnLineaConLa</string>
+    <string name="noti_Tertulia">noti_Tertulia</string>
+    <string name="noti_MasDeTi">noti_MasDeTi</string>
+    <string name="noti_TurismoDeMente">noti_TurismoDeMente</string>
+    <string name="noti_CafeDeLaCiencia">noti_CafeDeLaCiencia</string>
+    <string name="noti_UgTalentShow">noti_UgTalentShow</string>
+    <string name="noti_HolaEmprededores">noti_HolaEmprededores</string>
+</resources>

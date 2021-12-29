@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck"
+    android:background="@color/white"
+    tools:context=".ui.programs.ProgramasFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/white"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        tools:ignore="MissingClass">
+
+        <TextView
+            android:id="@+id/Nuestrosprogramas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/mont_heavy"
+            android:text="Nuestros programas"
+            android:textAlignment="center"
+            android:textColor="#003d7f"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="-15dp"
+            >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="175dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:background="@drawable/nuestros_programas">
+
+                    <ImageView
+                        android:id="@+id/imageTertulia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="AbrirTerturlia"
+                        app:srcCompat="@drawable/tertulia_logo" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/PlayTertulia"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:onClick="AbrirTerturlia"
+                            app:srcCompat="@drawable/play_post" />
+
+                        <TextView
+                            android:id="@+id/PlayTextTertulia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mont_heavy"
+                            android:onClick="AbrirTerturlia"
+                            android:text="Ver ahora"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+                    </TableRow>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="175dp"
+                    android:background="@drawable/nuestros_programas"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageMásDeTi"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="AbrirMásdeti"
+                        app:srcCompat="@drawable/masdeti_logo" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/PlayMasDeTi"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:onClick="AbrirMásdeti"
+                            app:srcCompat="@drawable/play_post" />
+
+                        <TextView
+                            android:id="@+id/PlayTextMasDeTi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mont_heavy"
+                            android:onClick="AbrirMásdeti"
+                            android:text="Ver ahora"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+                    </TableRow>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="175dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:background="@drawable/nuestros_programas">
+
+                    <ImageView
+                        android:id="@+id/imageCartasSM"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="AbrirCartaSM"
+                        app:srcCompat="@drawable/cartasobrelamesa_logo" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/PlayCartasSM"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:onClick="AbrirCartaSM"
+                            app:srcCompat="@drawable/play_post" />
+
+                        <TextView
+                            android:id="@+id/PlayTextCartasSM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mont_heavy"
+                            android:text="Ver ahora"
+                            android:onClick="AbrirCartaSM"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+                    </TableRow>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="175dp"
+                    android:background="@drawable/nuestros_programas"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageEnLinU"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="AbrirEnlineaconlaU"
+                        app:srcCompat="@drawable/enlineaconlau_logo" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/PlayEnLinU"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:onClick="AbrirEnlineaconlaU"
+                            app:srcCompat="@drawable/play_post" />
+
+                        <TextView
+                            android:id="@+id/PlayTextEnLinU"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mont_heavy"
+                            android:text="Ver ahora"
+                            android:onClick="AbrirEnlineaconlaU"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+                    </TableRow>
+                </LinearLayout>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="175dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:background="@drawable/nuestros_programas">
+
+                    <ImageView
+                        android:id="@+id/imageTurismo"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="AbrirTurismodemente"
+                        app:srcCompat="@drawable/turismo_demente" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/PlayTurismo"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:onClick="AbrirTurismodemente"
+                            app:srcCompat="@drawable/play_post" />
+
+                        <TextView
+                            android:id="@+id/PlayTextTurismo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mont_heavy"
+                            android:text="Ver ahora"
+                            android:onClick="AbrirTurismodemente"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+                    </TableRow>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="175dp"
+                    android:background="@drawable/nuestros_programas"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/IMGugtalentshow"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="AbrirUGtaleteShow"
+                        app:srcCompat="@drawable/logo_the_ug_talent_show" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/Playugtalentshow"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:onClick="AbrirUGtaleteShow"
+                            app:srcCompat="@drawable/play_post" />
+
+                        <TextView
+                            android:id="@+id/PlayTextugtalentshow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mont_heavy"
+                            android:onClick="AbrirUGtaleteShow"
+                            android:text="Ver ahora"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+                    </TableRow>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="175dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:background="@drawable/nuestros_programas">
+
+                    <ImageView
+                        android:id="@+id/holaEmprendedores"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="AbrirHolaEmprendores"
+                        app:srcCompat="@drawable/logo_hola_emprendores" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/PlayholaEmprendedores"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:onClick="AbrirHolaEmprendores"
+                            app:srcCompat="@drawable/play_post" />
+
+                        <TextView
+                            android:id="@+id/PlayTextholaEmprendedores"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mont_heavy"
+                            android:text="Ver ahora"
+                            android:onClick="AbrirHolaEmprendores"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+                    </TableRow>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="175dp"
+                    android:background="@drawable/nuestros_programas"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/IMGcafedelaciencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="AbrirCafeDeCiencia"
+                        app:srcCompat="@drawable/logocafe_de_ciencia" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/Playcafedelaciencia"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:onClick="AbrirCafeDeCiencia"
+                            app:srcCompat="@drawable/play_post" />
+
+                        <TextView
+                            android:id="@+id/PlayTextcafedelaciencia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mont_heavy"
+                            android:onClick="AbrirCafeDeCiencia"
+                            android:text="Ver ahora"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+                    </TableRow>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+    <TextView
+        android:id="@+id/text_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout></ScrollView>

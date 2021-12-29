@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck"
+    tools:context=".ui.notificaciones.NotificacionesFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:ignore="MissingClass">
+
+
+        <TextView
+            android:id="@+id/AgSemanal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/mont_heavy"
+            android:text="Control de notificaciones"
+            android:textAlignment="center"
+            android:textColor="#003d7f"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="590dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/fondo_notificacion"
+            >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:paddingRight="10dp">
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="61dp"
+                        android:layout_marginEnd="-10dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/cartasobrelamesa_logo" />
+
+
+
+                    <TextView
+                        android:id="@+id/textCartas"
+                        android:layout_width="174dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/mont_semibold"
+                        android:paddingStart="0dp"
+                        android:paddingTop="20dp"
+                        android:text="Añadir recodatorio"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/campanaCartas"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="10dp"
+                        android:textAlignment="center"
+                        app:srcCompat="@drawable/activar_campana" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginEnd="-10dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/enlineaconlau_logo" />
+
+
+
+                    <TextView
+                        android:id="@+id/textEnlinea"
+                        android:layout_width="174dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/mont_semibold"
+                        android:paddingStart="0dp"
+                        android:paddingTop="20dp"
+                        android:text="Añadir recodatorio"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:id="@+id/campanaEnlinea"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="10dp"
+                        android:textAlignment="center"
+                        app:srcCompat="@drawable/desactivar_camapana" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="60dp"
+                        android:layout_height="61dp"
+                        android:layout_marginEnd="-10dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/masdeti_logo" />
+
+
+
+                    <TextView
+                        android:id="@+id/textMas"
+                        android:layout_width="174dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/mont_semibold"
+                        android:paddingStart="0dp"
+                        android:paddingTop="20dp"
+                        android:text="Añadir recodatorio"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:id="@+id/campanaMas"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="10dp"
+                        android:textAlignment="center"
+                        app:srcCompat="@drawable/campana" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginEnd="-10dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/tertulia_logo" />
+
+
+
+                    <TextView
+                        android:id="@+id/textTertulia"
+                        android:layout_width="174dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/mont_semibold"
+                        android:paddingStart="0dp"
+                        android:paddingTop="20dp"
+                        android:text="Añadir recodatorio"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:id="@+id/campanaTertulia"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="10dp"
+                        android:textAlignment="center"
+                        app:srcCompat="@drawable/campana" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginEnd="-10dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/turismodemente_logo" />
+
+
+
+                    <TextView
+                        android:id="@+id/textTurismo"
+                        android:layout_width="174dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/mont_semibold"
+                        android:paddingStart="0dp"
+                        android:paddingTop="20dp"
+                        android:text="Añadir recodatorio"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:id="@+id/campanaTurismo"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="10dp"
+                        android:textAlignment="center"
+                        app:srcCompat="@drawable/campana" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView30"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginEnd="-10dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/cafe_de_ciencia" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/textCafe"
+                        android:layout_width="174dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/mont_semibold"
+                        android:paddingStart="0dp"
+                        android:paddingTop="20dp"
+                        android:text="Añadir recodatorio"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:id="@+id/campanaCafe"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="10dp"
+                        android:textAlignment="center"
+                        app:srcCompat="@drawable/campana" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView31"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginEnd="-10dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/logo_the_ug_talent_show" />
+
+
+                    <TextView
+                        android:id="@+id/textTalent"
+                        android:layout_width="174dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/mont_semibold"
+                        android:paddingStart="0dp"
+                        android:paddingTop="20dp"
+                        android:text="Añadir recodatorio"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:id="@+id/campanaTalent"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="10dp"
+                        android:textAlignment="center"
+                        app:srcCompat="@drawable/campana" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView32"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:layout_marginEnd="-10dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/logo_hola_emprendores" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/textHola"
+                        android:layout_width="174dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/mont_semibold"
+                        android:paddingStart="0dp"
+                        android:paddingTop="20dp"
+                        android:text="Añadir recodatorio"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:id="@+id/campanaHola"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="10dp"
+                        android:textAlignment="center"
+                        app:srcCompat="@drawable/campana" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="408dp"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/reproduciendo" />
+
+            <TextView
+                android:id="@+id/textSlideshow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/mont_bold"
+                android:text="Reproduciendo"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="55dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView26"
+                app:layout_constraintTop_toBottomOf="@+id/textSlideshow"
+                app:srcCompat="@drawable/play_post" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="133dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textSlideshow"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/receso_musical" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="207dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView27"
+                app:layout_constraintTop_toBottomOf="@+id/imageView29"
+                app:srcCompat="@drawable/barra_musical_white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>
